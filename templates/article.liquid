@@ -1,0 +1,7 @@
+<h1>{{article.title}}</h1>
+<p>{{article.published_at | date: '%B, %d, %Y'}}</p>
+<div>
+    {{article.content}}
+</div>
+
+{%article.comments_enabled? %}
